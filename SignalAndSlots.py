@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import *
 from Identify_query import Recognize_voice
 from s_2_t import ui_path_fun
 from quick_book_v1 import exter_book_quick_play
+import pyttsx3
 
 
 class Window(QMainWindow):
@@ -29,28 +30,37 @@ class Window(QMainWindow):
 
     def CreateButton(self):
         button = QPushButton("Add New User", self)
-        button.setGeometry(QRect(25, 25, 200, 50))
+        button.setStyleSheet("QPushButton { font-size: 30px }")
+        button.setGeometry(QRect(25, 25, 230, 100))
         button.clicked.connect(self.add_new_user)
 
         button = QPushButton("Play Me", self)
-        button.setGeometry(QRect(25, 250, 200, 50))
+        button.setStyleSheet("QPushButton { font-size: 30px }")
+        button.setGeometry(QRect(25, 250, 230, 100))
         button.setIcon(QtGui.QIcon("play_icon.png"))
         button.clicked.connect(self.ClickMe)
 
         button = QPushButton("Quick Book", self)
-        button.setGeometry((QRect(25, 500, 200, 50)))
+        button.setStyleSheet("QPushButton { font-size: 30px }")
+        button.setGeometry((QRect(25, 500, 230, 100)))
         button.clicked.connect(self.quick_play)
 
     def ClickMe(self):
+        engine = pyttsx3.init()
+        engine.say("Hello, What can I do for you?")
         _data = Recognize_voice()
 
         if _data == "book bus for me" or _data == "book bus" or _data == "bus for me":
             ui_path_fun()
         else:
-            print("Hello")
+            engine = pyttsx3.init()
+            print("Sorry this is beyond my abilities.")
+            engine.say("This is beyond my abilities.")
+            engine.runAndWait()
 
     def quick_play(self):
         alert = QMessageBox()
+        alert.setWindowTitle("Quick Play")
         alert.setText('This is Quick play Button!')
         alert.exec_()
         exter_book_quick_play()
