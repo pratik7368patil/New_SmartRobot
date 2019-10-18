@@ -12,7 +12,7 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.title = "Event and Signal "
+        self.title = "SmartRobot"
         self.top = 100
         self.left = 100
         self.width = 1200
@@ -21,6 +21,7 @@ class Window(QMainWindow):
         self.InitWindow()
 
     def InitWindow(self):
+        self.setStyleSheet("background-color: white;")
         self.setWindowIcon(QtGui.QIcon("play_icon.png"))
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
@@ -30,19 +31,22 @@ class Window(QMainWindow):
 
     def CreateButton(self):
         button = QPushButton("Add New User", self)
-        button.setStyleSheet("QPushButton { font-size: 30px }")
+        button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 5px; border: 4px solid "
+                             "black; }")
         button.setGeometry(QRect(25, 25, 230, 100))
         button.clicked.connect(self.add_new_user)
 
         button = QPushButton("Play Me", self)
-        button.setStyleSheet("QPushButton { font-size: 30px }")
-        button.setGeometry(QRect(25, 250, 230, 100))
-        button.setIcon(QtGui.QIcon("play_icon.png"))
+        button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 5px; border: 4px solid "
+                             "black;}")
+        button.setGeometry((QRect(355, 25, 230, 100)))
         button.clicked.connect(self.ClickMe)
 
-        button = QPushButton("Quick Book", self)
-        button.setStyleSheet("QPushButton { font-size: 30px }")
-        button.setGeometry((QRect(25, 500, 230, 100)))
+        button = QPushButton("", self)
+        button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 50px; border: 4px solid "
+                             "black; }")
+        button.setGeometry(QRect(685, 25, 100, 100))
+        button.setIcon(QtGui.QIcon("play_icon.png"))
         button.clicked.connect(self.quick_play)
 
     def ClickMe(self):
