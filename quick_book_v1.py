@@ -35,7 +35,8 @@ def exter_book_quick_play():
         _data = recog_voice()
         if _data.__contains__("book") and _data.__contains__("bus"):
             # filter data (remove unwanted chars )
-            bad_stm = ['/', '|', ';', '.', '!', '*', "'", ':', '?', '(', ')', '[', ']', '{', '}', '@', '#', "$", '%', "&",
+            bad_stm = ['/', '|', ';', '.', '!', '*', "'", ':', '?', '(', ')', '[', ']', '{', '}', '@', '#', "$", '%',
+                       "&",
                        'and', 'is', ]
             for i in bad_stm:
                 _data = _data.replace(i, '')
@@ -54,18 +55,24 @@ def exter_book_quick_play():
                 des_idx = frm_idx + 1
                 des_city = _data_arr[des_idx]
                 print(des_city)
+                engine.say("Your destination city is " + des_city)
+                engine.runAndWait()
                 driver.find_element_by_id('frm').send_keys(des_city)
                 # Arrival city data
                 to_idx = _data_arr.index('to')
                 arr_idx = to_idx + 1
                 arr_city = _data_arr[arr_idx]
                 print(arr_city)
+                engine.say("your arrival city is " + arr_city)
+                engine.runAndWait()
                 driver.find_element_by_id('t_o').send_keys(arr_city)
                 # Bus type
                 bt_idx = _data_arr.index('type')
                 b_type_idx = bt_idx + 1
                 b_type = _data_arr[b_type_idx]
                 print(b_type)
+                engine.say("Your bus type is " + b_type)
+                engine.runAndWait()
                 driver.find_element_by_id('b_type').send_keys(b_type)
                 # get date
                 dte_idx = _data_arr.index('on')
@@ -93,6 +100,11 @@ def exter_book_quick_play():
                 else:
                     mm
                 driver.find_element_by_id('mm').send_keys(mm)
+                engine.say("Your traveling date is ")
+                engine.say(dd)
+                engine.say(mm)
+                engine.say(yyyy)
+                engine.runAndWait()
 
                 print("Date is {}/{}/{} ".format(dd, mm, yyyy))
 
