@@ -72,6 +72,9 @@ class Window(QMainWindow):
     def add_new_user(self):
         print("Hello world")
 
+    def close_window(self):
+        sys.exit()
+
 
 App = QApplication(sys.argv)
 App.setStyle('Fusion')
