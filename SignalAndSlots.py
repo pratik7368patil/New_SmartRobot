@@ -20,30 +20,30 @@ class Window(QMainWindow):
 
         bar = self.menuBar()
         bar_ = QGraphicsDropShadowEffect(self)
-        bar_.setBlurRadius(60)
+        bar_.setBlurRadius(1000)
         bar.setGraphicsEffect(bar_)
 
-        bar.setStyleSheet("font-size: 30px;")
+        bar.setStyleSheet("font-size: 30px; color: white;")
         file = bar.addMenu("File")
-        edit_ = bar.addMenu("Edit")
-        view = bar.addMenu("View")
-        file.addAction("New")
-
-        save = QAction("Save", self)
-        save.setShortcut("Ctrl+S")
-        file.addAction(save)
-
-        edit = file.addMenu("Edit")
-        edit.addAction("Copy")
-        edit.addAction("Paste")
+        add_new_platform = bar.addMenu("Add New Platform")
+        history = bar.addMenu("History")
+        hw_to_use = bar.addMenu("How to use?")
+        hlp = bar.addMenu("Help")
+        file.addAction("Add Data")
 
         qut = QAction("Quit", self)
         file.addAction(qut)
 
+        # for add_new_platform
+        add_new_platform.addAction("For Bus")
+        add_new_platform.addAction("For Flight")
+        add_new_platform.addAction("To Buy Product")
+        add_new_platform.addAction("To Order Food")
+
         self.InitWindow()
 
     def InitWindow(self):
-        self.setStyleSheet("background-color: white;")
+        self.setStyleSheet("background-color: #343434")
         self.setWindowIcon(QtGui.QIcon("play_icon.png"))
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
@@ -52,23 +52,11 @@ class Window(QMainWindow):
         self.show()
 
     def CreateButton(self):
-        button = QPushButton("Add New User", self)
-        button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 5px; border: 4px solid "
-                             "black; }")
-        button.setGeometry(QRect(25, 100, 230, 100))
-        button.clicked.connect(self.add_new_user)
-
-        button = QPushButton("Play Me", self)
-        button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 5px; border: 4px solid "
-                             "black;}")
-        button.setGeometry((QRect(355, 100, 230, 100)))
-        button.clicked.connect(self.ClickMe)
-
         button = QPushButton("", self)
-        button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 50px; border: 4px solid "
-                             "black; }")
-        button.setGeometry(QRect(685, 100, 100, 100))
-        button.setIcon(QtGui.QIcon("play_icon.png"))
+        button.setStyleSheet("QPushButton { font-size: 30px; color: white; border-radius: 50px; border: 4px solid "
+                             "#4169E1; }")
+        button.setGeometry(QRect(550, 350, 100, 100))
+        button.setIcon(QtGui.QIcon("Bubble_icon.png"))
         button.clicked.connect(self.quick_play)
 
     def ClickMe(self):
