@@ -15,30 +15,33 @@ class Window(QMainWindow):
         self.title = "SmartRobot"
         self.top = 100
         self.left = 100
-        self.width = 1200
-        self.height = 800
+        self.width = 2300
+        self.height = 1200
 
         bar = self.menuBar()
         bar_ = QGraphicsDropShadowEffect(self)
         bar_.setBlurRadius(1000)
         bar.setGraphicsEffect(bar_)
 
-        bar.setStyleSheet("font-size: 30px; color: white;")
+        bar.setStyleSheet("font-size: 30px; color: white; border-bottom: 1px solid black;")
         file = bar.addMenu("File")
         add_new_platform = bar.addMenu("Add New Platform")
         history = bar.addMenu("History")
         hw_to_use = bar.addMenu("How to use?")
         hlp = bar.addMenu("Help")
-        file.addAction("Add Data")
 
+        # for file
+        add_data = file.addAction("Add Data")
+        setting = file.addAction("Settings")
         qut = QAction("Quit", self)
         file.addAction(qut)
 
+
         # for add_new_platform
-        add_new_platform.addAction("For Bus")
-        add_new_platform.addAction("For Flight")
-        add_new_platform.addAction("To Buy Product")
-        add_new_platform.addAction("To Order Food")
+        f_bus = add_new_platform.addAction("For Bus")
+        f_flight = add_new_platform.addAction("For Flight")
+        t_b_product = add_new_platform.addAction("To Buy Product")
+        t_o_food = add_new_platform.addAction("To Order Food")
 
         self.InitWindow()
 
@@ -53,9 +56,9 @@ class Window(QMainWindow):
 
     def CreateButton(self):
         button = QPushButton("", self)
-        button.setStyleSheet("QPushButton { font-size: 30px; color: white; border-radius: 50px; border: 4px solid "
+        button.setStyleSheet("QPushButton {color: white; border-radius: 50px; border: 4px solid "
                              "#4169E1; }")
-        button.setGeometry(QRect(550, 350, 100, 100))
+        button.setGeometry(QRect(1150, 350, 100, 100))
         button.setIcon(QtGui.QIcon("Bubble_icon.png"))
         button.clicked.connect(self.quick_play)
 
