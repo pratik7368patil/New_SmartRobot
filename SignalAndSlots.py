@@ -18,6 +18,28 @@ class Window(QMainWindow):
         self.width = 1200
         self.height = 800
 
+        bar = self.menuBar()
+        bar_ = QGraphicsDropShadowEffect(self)
+        bar_.setBlurRadius(60)
+        bar.setGraphicsEffect(bar_)
+
+        bar.setStyleSheet("font-size: 30px;")
+        file = bar.addMenu("File")
+        edit_ = bar.addMenu("Edit")
+        view = bar.addMenu("View")
+        file.addAction("New")
+
+        save = QAction("Save", self)
+        save.setShortcut("Ctrl+S")
+        file.addAction(save)
+
+        edit = file.addMenu("Edit")
+        edit.addAction("Copy")
+        edit.addAction("Paste")
+
+        qut = QAction("Quit", self)
+        file.addAction(qut)
+
         self.InitWindow()
 
     def InitWindow(self):
@@ -33,19 +55,19 @@ class Window(QMainWindow):
         button = QPushButton("Add New User", self)
         button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 5px; border: 4px solid "
                              "black; }")
-        button.setGeometry(QRect(25, 25, 230, 100))
+        button.setGeometry(QRect(25, 100, 230, 100))
         button.clicked.connect(self.add_new_user)
 
         button = QPushButton("Play Me", self)
         button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 5px; border: 4px solid "
                              "black;}")
-        button.setGeometry((QRect(355, 25, 230, 100)))
+        button.setGeometry((QRect(355, 100, 230, 100)))
         button.clicked.connect(self.ClickMe)
 
         button = QPushButton("", self)
         button.setStyleSheet("QPushButton { font-size: 30px; color: black; border-radius: 50px; border: 4px solid "
                              "black; }")
-        button.setGeometry(QRect(685, 25, 100, 100))
+        button.setGeometry(QRect(685, 100, 100, 100))
         button.setIcon(QtGui.QIcon("play_icon.png"))
         button.clicked.connect(self.quick_play)
 
