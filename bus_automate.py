@@ -6,7 +6,9 @@ from datetime import date
 
 url = "https://www.redbus.in/"
 driver = webdriver.Chrome()
+driver.maximize_window()
 driver.get(url)
+time.sleep(1)
 s_city = driver.find_element_by_id('src').send_keys('Malkapur')
 time.sleep(5)
 d_city = driver.find_element_by_id('dest').send_keys('Pune')
