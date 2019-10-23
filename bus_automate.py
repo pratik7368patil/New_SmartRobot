@@ -1,8 +1,9 @@
 from queue import Empty
-from selenium.webdriver.support.ui import Select
 from selenium import webdriver
 import time
 from datetime import date
+from bs4 import BeautifulSoup
+import pandas as pd
 
 url = "https://www.redbus.in/"
 driver = webdriver.Chrome()
@@ -57,3 +58,24 @@ while flag > 0:
 
 driver.find_element_by_xpath("//div[@id='rb-calendar_onward_cal']/table/tbody/tr/td[text()=" + dd + "]").click()
 driver.find_element_by_xpath("//button[@id='search_btn']").click()
+content = driver.page_source
+soup = BeautifulSoup(content, features="html.parser")
+info = soup.find_all('div', attrs={'class': 'clearfix row-one'})
+print(len(info))
+name_ = []
+tpe_ = []
+price_ = []
+"""
+for a in info:
+    name = a.find('div', attrs={'class': 'travels lh-24 f-bold d-color'})
+    tpe = a.find('div', attrs={'class': 'bus-type f-12 m-top-16 l-color'})
+    price = a.find('div', attrs={'class': 'f-19 f-bold'})
+    name_.append(name.text)
+    tpe_.append(tpe.text)
+    price_.append(price.text)
+
+df = pd.DataFrame({'Travels Name': name_, 'Bus Type': tpe_, 'Price': price_})
+df.to_csv('products.csv', index=False, encoding='utf-8')
+"""
+
+driver.close()
