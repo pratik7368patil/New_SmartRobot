@@ -4,16 +4,20 @@ import time
 from datetime import date
 from bs4 import BeautifulSoup
 import pandas as pd
+import pyttsx3
+from Identify_query import Recognize_voice
 
-url = "https://www.redbus.in/"
+engine = pyttsx3.init()
+
 driver = webdriver.Chrome()
 driver.maximize_window()
+url = "https://www.redbus.in/"
 driver.get(url)
 time.sleep(1)
 s_city = driver.find_element_by_id('src').send_keys('Aurangabad')
-time.sleep(5)
+time.sleep(3)
 d_city = driver.find_element_by_id('dest').send_keys('Pune')
-time.sleep(5)
+time.sleep(3)
 dr = driver.find_element_by_id('onward_cal').send_keys('0')
 
 
@@ -70,6 +74,7 @@ print(len(info))
 name_ = []
 tpe_ = []
 price_ = []
+time_ = []
 for a in info:
     name = a.find('div', attrs={'class': 'travels lh-24 f-bold d-color'})
     name_.append(name.text)
@@ -79,8 +84,10 @@ for a in info:
     price_with_text = price.text
     price_without_text = res = [int(i) for i in price_with_text.split() if i.isdigit()]
     price_.append(price_without_text[0])
+    time = a.find('div', attrs={'class': 'dp-time f-19 d-color f-bold'})
+    time_.append(time.text)
 
-df = pd.DataFrame({'Travels Name': name_, 'Bus Type': tpe_, 'Price': price_})
+df = pd.DataFrame({'Travels Name': name_, 'Bus Type': tpe_, 'Price': price_, 'Time': time_})
 df.to_csv('products.csv', index=False, encoding='utf-8')
 
 driver.close()
@@ -91,8 +98,20 @@ for row in csv_data.index:
     all_ele.append(csv_data['Price'][row])
 
 all_ele_len = len(all_ele)
-average_price = sum(all_ele)/all_ele_len
+average_price = sum(all_ele) / all_ele_len
 print(average_price)
+
+engine.say("Now tell me, Which type of Bus you like to book?")
+engine.say("We have some types, and these are: R T C means Government buses, Shivshahi buses, Shivneri buses, "
+           "Private buses, or you can book sleeper bus ")
+engine.runAndWait()
+b_type = Recognize_voice()
+
+# making data frame from csv file
+data = pd.read_csv("products.csv", delimiter=',')
+
+# replacing blank spaces with '_'
+data.columns = [column.replace(" ", "_") for column in data.columns]
 
 
 def closest(lst, K):
@@ -104,16 +123,16 @@ K = average_price
 actual_price_close_to_avg_price = closest(all_ele, K)
 print(actual_price_close_to_avg_price)
 
-# making data frame from csv file
-data = pd.read_csv("products.csv", delimiter=',')
+if 'shivshahi bus' in b_type or 'shivshahi buses' in b_type or 'shivshahi' in b_type:
+    # filtering with query method for Shivshahi buses
+    # data.query('Bus_Type == "SHIVSHAHI"', inplace=True)
 
-# replacing blank spaces with '_'
-data.columns = [column.replace(" ", "_") for column in data.columns]
-
-# filtering with query method
-# data.query('Bus_Type == "SHIVSHAHI"', inplace=True)
-
-ele_having_shshahi = data[data.Bus_Type == 'SHIVSHAHI']
-print(ele_having_shshahi)
-print(type(ele_having_shshahi))
-
+    ele_having_shivshahi = data[data.Bus_Type == 'SHIVSHAHI']
+    minValue = ele_having_shivshahi['Price'].min()
+    time_of_that_bus = ele_having_shivshahi.loc[ele_having_shivshahi['Price'] == minValue, 'Time'].iloc[0]
+    print(ele_having_shivshahi)
+    print(minValue)
+    print(time_of_that_bus)
+    engine.say("I found one bus for you at lowest price, at " + str(minValue))
+    engine.say("and Bus time is " + str(time_of_that_bus))
+    engine.runAndWait()

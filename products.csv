@@ -1,250 +1,251 @@
-Travels Name,Bus Type,Price
-MSRTC  - 340053,PARIVARTAN ORDINARY EXPRESS,310
-MSRTC  - 514330,SHIVSHAHI,485
-MSRTC  - 535799,PARIVARTAN NIGHT EXPRESS,385
-MSRTC  - 520263,SHIVSHAHI,440
-MSRTC  - 635208,PARIVARTAN NIGHT EXPRESS,310
-MSRTC  - 613945,SHIVSHAHI,485
-MSRTC  - 635209,PARIVARTAN NIGHT EXPRESS,310
-MSRTC  - 574815,SHIVSHAHI,365
-MSRTC  - 609268,SHIVSHAHI,485
-MSRTC  - 188704,AC-SHIVNERI,655
-MSRTC  - 550788,SHIVSHAHI,455
-MSRTC  - 613947,SHIVSHAHI,440
-MSRTC  - 636903,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 441977,SEMI LUXURY,310
-MSRTC  - 504434,PARIVARTAN DAY ORDINARY,305
-MSRTC  - 609272,SHIVSHAHI,440
-MSRTC  - 637054,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 442137,PARIVARTAN NIGHT EXPRESS,310
-MSRTC  - 188688,AC-SHIVNERI,655
-MSRTC  - 448252,PARIVARTAN NIGHT EXPRESS,290
-MSRTC  - 613951,SHIVSHAHI,440
-MSRTC  - 606043,PARIVARTAN NIGHT EXPRESS,295
-MSRTC  - 472086,PARIVARTAN DAY ORDINARY,310
-MSRTC  - 533381,SHIVSHAHI,440
-MSRTC  - 609275,SHIVSHAHI,440
-MSRTC  - 188691,AC-SHIVNERI,655
-MSRTC  - 540904,PARIVARTAN DAY ORDINARY,325
-MSRTC  - 613954,SHIVSHAHI,440
-MSRTC  - 636030,PARIVARTAN ORDINARY EXPRESS,230
-MSRTC  - 537329,SEMI LUXURY,310
-MSRTC  - 633200,PARIVARTAN NIGHT EXPRESS,295
-MSRTC  - 366681,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 540905,PARIVARTAN DAY ORDINARY,310
-MSRTC  - 609278,SHIVSHAHI,440
-MSRTC  - 472087,PARIVARTAN DAY ORDINARY,310
-MSRTC  - 372102,AC-SHIVNERI,655
-MSRTC  - 636031,PARIVARTAN ORDINARY EXPRESS,325
-MSRTC  - 613957,SHIVSHAHI,485
-MSRTC  - 472083,PARIVARTAN DAY ORDINARY,310
-MSRTC  - 366833,PARIVARTAN DAY ORDINARY,310
-MSRTC  - 636032,PARIVARTAN ORDINARY EXPRESS,295
-MSRTC  - 540907,PARIVARTAN DAY ORDINARY,310
-MSRTC  - 609285,SHIVSHAHI,485
-MSRTC  - 633182,SEMI LUXURY,400
-MSRTC  - 372104,AC-SHIVNERI,655
-MSRTC  - 517476,SHIVSHAHI,440
-MSRTC  - 540908,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 613958,SHIVSHAHI,485
-MSRTC  - 609290,SHIVSHAHI,440
-MSRTC  - 537332,SEMI LUXURY,310
-MSRTC  - 540909,PARIVARTAN NIGHT EXPRESS,310
-MSRTC  - 633201,PARIVARTAN NIGHT EXPRESS,295
-MSRTC  - 634152,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 372105,AC-SHIVNERI,655
-MSRTC  - 373813,DAY ORDINARY,445
-MSRTC  - 609118,SEMI LUXURY,495
-MSRTC  - 613960,SHIVSHAHI,485
-MSRTC  - 490982,PARIVARTAN NIGHT EXPRESS,295
-MSRTC  - 634077,PARIVARTAN NIGHT EXPRESS,340
-MSRTC  - 609271,SHIVSHAHI,440
-MSRTC  - 601707,PARIVARTAN NIGHT EXPRESS,185
-MSRTC  - 372106,AC-SHIVNERI,655
-MSRTC  - 462754,PARIVARTAN NIGHT EXPRESS,295
-MSRTC  - 613962,SHIVSHAHI,440
-MSRTC  - 637613,PARIVARTAN DAY ORDINARY,235
-MSRTC  - 373989,DAY ORDINARY,325
-MSRTC  - 609274,SHIVSHAHI,440
-MSRTC  - 366598,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 637614,PARIVARTAN DAY ORDINARY,235
-MSRTC  - 636102,PARIVARTAN NIGHT EXPRESS,275
-MSRTC  - 470555,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 372108,AC-SHIVNERI,655
-MSRTC  - 516165,SHIVSHAHI,440
-MSRTC  - 622869,SHIVSHAHI,440
-MSRTC  - 613963,SHIVSHAHI,440
-MSRTC  - 636902,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 634078,PARIVARTAN NIGHT EXPRESS,310
-MSRTC  - 501252,SEMI LUXURY,400
-MSRTC  - 497009,PARIVARTAN DAY ORDINARY,325
-MSRTC  - 371574,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 609277,SHIVSHAHI,440
-MSRTC  - 372025,DAY ORDINARY,445
-MSRTC  - 372109,AC-SHIVNERI,655
-MSRTC  - 634163,PARIVARTAN DAY ORDINARY,305
-MSRTC  - 613964,SHIVSHAHI,440
-MSRTC  - 399904,PARIVARTAN DAY ORDINARY,310
-MSRTC  - 42158,PARIVARTAN NIGHT EXPRESS,455
-MSRTC  - 609284,SHIVSHAHI,440
-MSRTC  - 371579,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 188687,AC-SHIVNERI,655
-MSRTC  - 613965,SHIVSHAHI,440
-MSRTC  - 373990,DAY ORDINARY,325
-MSRTC  - 635416,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 609289,SHIVSHAHI,440
-MSRTC  - 188690,AC-SHIVNERI,655
-MSRTC  - 613968,SHIVSHAHI,440
-MSRTC  - 412692,SEMI LUXURY,755
-MSRTC  - 609293,SHIVSHAHI,440
-MSRTC  - 188693,AC-SHIVNERI,655
-MSRTC  - 609104,PARIVARTAN DAY ORDINARY,295
-MSRTC  - 613971,SHIVSHAHI,440
-MSRTC  - 636041,PARIVARTAN ORDINARY EXPRESS,305
-MSRTC  - 609270,SHIVSHAHI,440
-MSRTC  - 188686,AC-SHIVNERI,655
-MSRTC  - 613972,SHIVSHAHI,440
-MSRTC  - 441975,SEMI LUXURY,310
-MSRTC  - 609273,SHIVSHAHI,440
-MSRTC  - 188689,AC-SHIVNERI,655
-MSRTC  - 613974,SHIVSHAHI,440
-MSRTC  - 609276,SHIVSHAHI,440
-MSRTC  - 188692,AC-SHIVNERI,655
-MSRTC  - 613977,SHIVSHAHI,440
-MSRTC  - 609280,SHIVSHAHI,440
-MSRTC  - 372111,AC-SHIVNERI,655
-MSRTC  - 518191,SHIVSHAHI,320
-MSRTC  - 613976,SHIVSHAHI,440
-MSRTC  - 370886,PARIVARTAN NIGHT EXPRESS,385
-MSRTC  - 609287,SHIVSHAHI,485
-MSRTC  - 633216,PARIVARTAN NIGHT EXPRESS,315
-MSRTC  - 551106,SHIVSHAHI,455
-MSRTC  - 613978,SHIVSHAHI,485
-MSRTC  - 636153,PARIVARTAN NIGHT EXPRESS,330
-MSRTC  - 372112,AC-SHIVNERI,655
-MSRTC  - 609292,SHIVSHAHI,440
-MSRTC  - 633189,SEMI LUXURY,415
-MSRTC  - 369271,PARIVARTAN NIGHT EXPRESS,405
-MSRTC  - 372114,AC-SHIVNERI,655
-MSRTC  - 489232,PARIVARTAN NIGHT EXPRESS,455
-MSRTC  - 634155,PARIVARTAN NIGHT EXPRESS,405
-Sai Prasanna Travels -Shatabdi ,Bharat Benz A/C Sleeper (2+1),1173
-Rahi Tour And Travels Safar ,A/C Sleeper (2+1),900
-Shreyas Travels ,A/C Sleeper (2+1),750
-Pancham Travels -Pancham ,A/C Sleeper (2+1),1200
-Prasanna Purple Mobility Solutions Pvt Ltd ,A/C Sleeper (2+1),1000
-Ramleela Tours And Travels ,A/C Sleeper (2+1),900
-Humsafar   Travels ,A/C Sleeper (2+1),1000
-Sai Prasanna Travels -Shatabdi ,A/C Sleeper (2+1),1050
-Rahi Tour And Travels ,A/C Sleeper (2+1),900
-Sai Prasanna Travels -Shatabdi ,A/C Sleeper (2+1),1050
-Musafir Travels Goodluck ,A/C Sleeper (2+1),730
-Humsafar   Travels ,A/C Sleeper (2+1),1500
-Humsafar   Travels ,NON A/C Seater (2+2),800
-Humsafar   Travels ,A/C Sleeper (2+1),1000
-Humsafar   Travels ,A/C Sleeper (2+1),1000
-Konduskar Travels Pvt. Ltd. ,Bharat Benz A/C Sleeper (2+1),1334
-Shatabdi Travels(Prasanna) ,A/C Sleeper (2+1),1200
-Pancham Travels - PANCHAM ,A/C Sleeper (2+1),1200
-Humsafar   Travels ,Bharat Benz A/C Sleeper (2+1),1500
-Westline Travels ,A/C Sleeper (2+1),1200
-Humsafar   Travels ,NON A/C Seater (2+1),600
-Bhavana Tours and Travels ,A/C Sleeper (2+1),850
-Bhavana Tours and Travels ,NON A/C Sleeper (2+1),700
-Dolphin Travel House (97) ,NON A/C Seater (2+2),560
-Paulo travels ,A/C Seater / Sleeper (2+1),800
-Humsafar   Travels ,A/C Sleeper (2+1),1300
-Savera Carriers and Contractors Pvt.Ltd. ,A/C Sleeper (2+1),1500
-Himalaya Travels MB LINK ,A/C Sleeper (2+1),1310
-Sai Prasanna Travels - Royal Cars Plus ,A/C Sleeper (2+1),1400
-Mahalaxmi Travels DRC ,A/C Sleeper (2+1),1000
-Dolphin Travel House (94) ,Bharat Benz A/C Sleeper (2+1),1210
-Rameshwar Travels Shatabdi ,NON A/C Sleeper (2+1),800
-Shangrila Tours and Travels ,NON A/C Seater (2+2),600
-Mahalaxmi Travels Mahalaxmi ,NON A/C Sleeper (2+1),1050
-Mahalaxmi Travels Pooja ,A/C Sleeper (2+1),1000
-Bhavana Tours and Travels ,A/C Sleeper (2+1),1000
-Hare Krishna Travels Vaibhav ,A/C Sleeper (2+1),1100
-Eagle Travels ,A/C Sleeper (2+1),1010
-Neeta tours and travels ,Volvo Multi-Axle A/C Sleeper (2+1),2000
-Konduskar Travels Pvt. Ltd. ,Volvo A/C Sleeper (2+1),1142
-Vaibhav Travels ,A/C Sleeper (2+1),1100
-Dolphin Travel House(96) ,A/C Sleeper (2+1),1210
-Jugnu Travels Agency ,A/C Sleeper (2+1),1200
-Mahalaxmi Travels Anand ,NON A/C Seater (2+2),650
-Bhavana Tours and Travels ,A/C Sleeper (2+1),1500
-New Akash Travels ,NON A/C Seater (2+2),700
-Shree khurana travels ,A/C Sleeper (2+1),1333
-Sai shraddha tours and travels ,NON A/C Sleeper (2+1),1500
-Shreyas Travels Red Star ,A/C Sleeper (2+1),1280
-Ramleela Tours And Travels ,A/C Sleeper (2+1),1200
-Konduskar Travels Pvt. Ltd. ,Volvo A/C Sleeper (2+1),1047
-Yuga travels ,A/C Sleeper (2+1),2200
-SRS Travels ,Scania Multi-Axle A/C Semi Sleeper (2+2),2200
-Shree khurana travels ,Bharat Benz A/C Sleeper (2+1),2381
-Shree khurana travels ,NON A/C Sleeper (2+1),1300
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Nakoda    Travels ,A/C Sleeper (2+1),1200
-Nakoda    Travels ,A/C Sleeper (2+1),1500
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Dolphin Travel House(93) ,A/C Sleeper (2+1),1210
-Bharuka Travels ,A/C Sleeper (2+1),1500
-New Akash Travels Saini Palace ,A/C Sleeper (2+1),1350
-Vishwa   Travels ,A/C Sleeper (2+1),762
-New Akash Travels Sairaj ,A/C Sleeper (2+1),1350
-Sanjay Travel Hundekari ,A/C Sleeper (2+1),1200
-Khurana Travel Services ,A/C Sleeper (2+1),2331
-Khurana Travel Services ,A/C Sleeper (2+1),2137
-Sanjay Travel Shreyas ,NON A/C Seater (2+2),700
-Shrinath Travel ,A/C Sleeper (2+1),950
-Musafir Travels City Link ,NON A/C Sleeper (2+1),630
-Sai  travels chembur ,A/C Sleeper (2+1),1900
-Sai  travels chembur ,A/C Sleeper (2+1),1200
-Sai  travels chembur ,A/C Sleeper (2+1),1200
-Royal Chintamani ,A/C Sleeper (2+1),2500
-Shree Samarth Krupa Travels ,A/C Sleeper (2+1),1500
-"Himalaya Travels , Aurangabad ",A/C Sleeper (2+1),1810
-Himalaya Travels MB LINK ,A/C Sleeper (2+1),1110
-Sai shraddha tours and travels ,NON A/C Sleeper (2+1),1600
-Jai  Mata Di Travels ,NON A/C Sleeper (2+1),2000
-Sai Raj Tours and Travels ,NON A/C Sleeper (2+1),720
-Bhavana Tours and Travels ,NON A/C Seater (2+2),450
-Royal Chintamani Royal Chintamani ,A/C Sleeper (2+1),1370
-Shree khurana travels ,NON A/C Sleeper (2+1),1200
-Prasanna Purple Mobility Solutions Pvt Ltd ,Bharat Benz A/C Sleeper (2+1),2500
-Yuga travels ,A/C Sleeper (2+1),2400
-Yuga travels ,A/C Sleeper (2+1),2200
-Jogeshwari Enterprises ,A/C Sleeper (2+1),1200
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),476
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Shree khurana travels ,Bharat Benz A/C Seater (2+1),667
-Dolphin  travel  house ,A/C Sleeper (2+1),1200
-Khurana express services ,Bharat Benz A/C Sleeper (2+1),3164
-Khurana Travel Services ,A/C Sleeper (2+1),2817
-Meera Tours and Travels ,A/C Sleeper (2+1),2499
-Khurana Travel Services ,A/C Sleeper (2+1),2817
-Khurana Travel Services ,A/C Sleeper (2+1),2137
-Khurana Travel Services ,A/C Sleeper (2+1),2817
-Shree Samarth Krupa Travels ,NON A/C Seater (2+2),800
-Royal Chintamani Verma Travels ,A/C Sleeper (2+1),2785
-Royal Chintamani Royal Chintamani ,A/C Sleeper (2+1),1365
-Sai shraddha tours and travels ,A/C Sleeper (2+1),1900
-"Syndicate Travels, Aurangabad ",NON A/C Seater (2+2),410
-Jyotiba Tours and  Travels ,NON A/C Sleeper (2+1),1500
-Jai  Mata Di Travels ,A/C Sleeper (2+1),2000
-Jai  Mata Di Travels ,NON A/C Sleeper (2+1),1500
-Jai  Mata Di Travels ,NON A/C Seater (2+2),900
-Mauli Tours and Travels ,NON A/C Sleeper (2+1),1799
-Mauli Tours and Travels ,NON A/C Sleeper (1+2),1699
-Mauli Travels mauli ,NON A/C Sleeper (2+1),1499
-Muktai Travels Siddhivinayak ,NON A/C Sleeper (2+1),1600
-S K Tours And Travels ,NON A/C Seater (2+2),560
-"Syndicate Travels, Aurangabad ",A/C Seater (2+2),1000
+Travels Name,Bus Type,Price,Time
+MSRTC  - 340053,PARIVARTAN ORDINARY EXPRESS,310,00:00
+MSRTC  - 535799,PARIVARTAN NIGHT EXPRESS,385,00:30
+MSRTC  - 624987,SHIVSHAHI SLEEPER,475,01:00
+MSRTC  - 516375,SHIVSHAHI,440,01:45
+MSRTC  - 520263,SHIVSHAHI,440,03:50
+MSRTC  - 635208,PARIVARTAN NIGHT EXPRESS,310,04:30
+MSRTC  - 574814,SHIVSHAHI,365,04:30
+MSRTC  - 613945,SHIVSHAHI,485,05:15
+MSRTC  - 635209,PARIVARTAN NIGHT EXPRESS,310,05:30
+MSRTC  - 574815,SHIVSHAHI,365,05:30
+MSRTC  - 609268,SHIVSHAHI,485,05:45
+MSRTC  - 188704,AC-SHIVNERI,655,06:01
+MSRTC  - 636903,PARIVARTAN DAY ORDINARY,295,06:15
+MSRTC  - 550788,SHIVSHAHI,455,06:15
+MSRTC  - 613947,SHIVSHAHI,440,06:15
+MSRTC  - 441977,SEMI LUXURY,310,06:30
+MSRTC  - 504434,PARIVARTAN DAY ORDINARY,305,06:40
+MSRTC  - 637054,PARIVARTAN DAY ORDINARY,295,06:45
+MSRTC  - 609272,SHIVSHAHI,440,06:45
+MSRTC  - 442137,PARIVARTAN NIGHT EXPRESS,310,06:50
+MSRTC  - 188688,AC-SHIVNERI,655,07:00
+MSRTC  - 448252,PARIVARTAN NIGHT EXPRESS,290,07:00
+MSRTC  - 613951,SHIVSHAHI,440,07:15
+MSRTC  - 606043,PARIVARTAN NIGHT EXPRESS,295,07:20
+MSRTC  - 472086,PARIVARTAN DAY ORDINARY,310,07:35
+MSRTC  - 533381,SHIVSHAHI,520,07:45
+MSRTC  - 609275,SHIVSHAHI,440,07:45
+MSRTC  - 188691,AC-SHIVNERI,655,08:01
+MSRTC  - 540904,PARIVARTAN DAY ORDINARY,325,08:05
+MSRTC  - 613954,SHIVSHAHI,440,08:15
+MSRTC  - 636030,PARIVARTAN ORDINARY EXPRESS,230,08:15
+MSRTC  - 537329,SEMI LUXURY,310,08:20
+MSRTC  - 366681,PARIVARTAN DAY ORDINARY,295,08:20
+MSRTC  - 633200,PARIVARTAN NIGHT EXPRESS,295,08:20
+MSRTC  - 540905,PARIVARTAN DAY ORDINARY,310,08:35
+MSRTC  - 609278,SHIVSHAHI,440,08:45
+MSRTC  - 472087,PARIVARTAN DAY ORDINARY,310,08:50
+MSRTC  - 636031,PARIVARTAN ORDINARY EXPRESS,325,09:00
+MSRTC  - 372102,AC-SHIVNERI,655,09:00
+MSRTC  - 613957,SHIVSHAHI,485,09:15
+MSRTC  - 472083,PARIVARTAN DAY ORDINARY,310,09:20
+MSRTC  - 366833,PARIVARTAN DAY ORDINARY,310,09:25
+MSRTC  - 636032,PARIVARTAN ORDINARY EXPRESS,295,09:30
+MSRTC  - 540907,PARIVARTAN DAY ORDINARY,310,09:35
+MSRTC  - 609285,SHIVSHAHI,485,09:45
+MSRTC  - 633182,SEMI LUXURY,400,09:50
+MSRTC  - 517476,SHIVSHAHI,440,10:00
+MSRTC  - 372104,AC-SHIVNERI,655,10:00
+MSRTC  - 540908,PARIVARTAN DAY ORDINARY,295,10:05
+MSRTC  - 613958,SHIVSHAHI,485,10:15
+MSRTC  - 609290,SHIVSHAHI,485,10:45
+MSRTC  - 540909,PARIVARTAN NIGHT EXPRESS,310,10:50
+MSRTC  - 633201,PARIVARTAN NIGHT EXPRESS,295,10:50
+MSRTC  - 537332,SEMI LUXURY,310,10:50
+MSRTC  - 634152,PARIVARTAN DAY ORDINARY,295,10:55
+MSRTC  - 372105,AC-SHIVNERI,655,11:00
+MSRTC  - 373813,DAY ORDINARY,445,11:05
+MSRTC  - 609118,SEMI LUXURY,495,11:10
+MSRTC  - 613960,SHIVSHAHI,485,11:15
+MSRTC  - 490982,PARIVARTAN NIGHT EXPRESS,295,11:15
+MSRTC  - 634077,PARIVARTAN NIGHT EXPRESS,340,11:15
+MSRTC  - 609271,SHIVSHAHI,440,11:45
+MSRTC  - 601707,PARIVARTAN NIGHT EXPRESS,185,11:45
+MSRTC  - 372106,AC-SHIVNERI,655,12:00
+MSRTC  - 613962,SHIVSHAHI,440,12:15
+MSRTC  - 462754,PARIVARTAN NIGHT EXPRESS,295,12:15
+MSRTC  - 637613,PARIVARTAN DAY ORDINARY,235,12:15
+MSRTC  - 366598,PARIVARTAN DAY ORDINARY,295,12:45
+MSRTC  - 373989,DAY ORDINARY,325,12:45
+MSRTC  - 609274,SHIVSHAHI,440,12:45
+MSRTC  - 637614,PARIVARTAN DAY ORDINARY,235,12:45
+MSRTC  - 636102,PARIVARTAN NIGHT EXPRESS,275,12:46
+MSRTC  - 470555,PARIVARTAN DAY ORDINARY,295,12:46
+MSRTC  - 516165,SHIVSHAHI,440,13:00
+MSRTC  - 372108,AC-SHIVNERI,655,13:00
+MSRTC  - 622869,SHIVSHAHI,440,13:05
+MSRTC  - 613963,SHIVSHAHI,440,13:15
+MSRTC  - 636902,PARIVARTAN DAY ORDINARY,295,13:15
+MSRTC  - 634078,PARIVARTAN NIGHT EXPRESS,310,13:30
+MSRTC  - 501252,SEMI LUXURY,400,13:45
+MSRTC  - 497009,PARIVARTAN DAY ORDINARY,325,13:45
+MSRTC  - 371574,PARIVARTAN DAY ORDINARY,295,13:45
+MSRTC  - 609277,SHIVSHAHI,440,13:45
+MSRTC  - 372025,DAY ORDINARY,445,13:55
+MSRTC  - 372109,AC-SHIVNERI,655,14:00
+MSRTC  - 634163,PARIVARTAN DAY ORDINARY,305,14:10
+MSRTC  - 613964,SHIVSHAHI,485,14:15
+MSRTC  - 399904,PARIVARTAN DAY ORDINARY,310,14:31
+MSRTC  - 42158,PARIVARTAN NIGHT EXPRESS,455,14:35
+MSRTC  - 609284,SHIVSHAHI,485,14:45
+MSRTC  - 371579,PARIVARTAN DAY ORDINARY,295,14:46
+MSRTC  - 188687,AC-SHIVNERI,655,15:01
+MSRTC  - 613965,SHIVSHAHI,485,15:15
+MSRTC  - 373990,DAY ORDINARY,325,15:15
+MSRTC  - 635416,PARIVARTAN DAY ORDINARY,295,15:30
+MSRTC  - 609289,SHIVSHAHI,440,15:45
+MSRTC  - 188690,AC-SHIVNERI,655,16:00
+MSRTC  - 613968,SHIVSHAHI,440,16:15
+MSRTC  - 412692,SEMI LUXURY,755,16:35
+MSRTC  - 609293,SHIVSHAHI,440,16:45
+MSRTC  - 188693,AC-SHIVNERI,655,17:00
+MSRTC  - 609104,PARIVARTAN DAY ORDINARY,325,17:00
+MSRTC  - 613971,SHIVSHAHI,440,17:15
+MSRTC  - 636041,PARIVARTAN ORDINARY EXPRESS,305,17:35
+MSRTC  - 609270,SHIVSHAHI,440,17:45
+MSRTC  - 188686,AC-SHIVNERI,655,18:01
+MSRTC  - 613972,SHIVSHAHI,440,18:15
+MSRTC  - 441975,SEMI LUXURY,310,18:45
+MSRTC  - 609273,SHIVSHAHI,440,18:45
+MSRTC  - 188689,AC-SHIVNERI,655,19:00
+MSRTC  - 613974,SHIVSHAHI,440,19:15
+MSRTC  - 609276,SHIVSHAHI,440,19:45
+MSRTC  - 188692,AC-SHIVNERI,655,20:01
+MSRTC  - 613977,SHIVSHAHI,440,20:15
+MSRTC  - 609280,SHIVSHAHI,440,20:45
+MSRTC  - 372111,AC-SHIVNERI,655,21:00
+MSRTC  - 518191,SHIVSHAHI,320,21:00
+MSRTC  - 613976,SHIVSHAHI,440,21:15
+MSRTC  - 370886,PARIVARTAN NIGHT EXPRESS,385,21:45
+MSRTC  - 609287,SHIVSHAHI,485,21:45
+MSRTC  - 633216,PARIVARTAN NIGHT EXPRESS,315,21:50
+MSRTC  - 551106,SHIVSHAHI,455,22:05
+MSRTC  - 613978,SHIVSHAHI,485,22:15
+MSRTC  - 636153,PARIVARTAN NIGHT EXPRESS,330,22:25
+MSRTC  - 372112,AC-SHIVNERI,655,22:30
+MSRTC  - 609292,SHIVSHAHI,485,22:45
+MSRTC  - 633189,SEMI LUXURY,415,23:20
+MSRTC  - 369271,PARIVARTAN NIGHT EXPRESS,405,23:30
+MSRTC  - 372114,AC-SHIVNERI,655,23:30
+MSRTC  - 489232,PARIVARTAN NIGHT EXPRESS,455,23:35
+MSRTC  - 634155,PARIVARTAN NIGHT EXPRESS,405,23:55
+Sai Prasanna Travels -Shatabdi ,Bharat Benz A/C Sleeper (2+1),1173,23:25
+Rahi Tour And Travels Safar ,A/C Sleeper (2+1),900,23:30
+Shreyas Travels ,A/C Sleeper (2+1),750,23:50
+Pancham Travels -Pancham ,A/C Sleeper (2+1),1200,23:30
+Prasanna Purple Mobility Solutions Pvt Ltd ,A/C Sleeper (2+1),1000,16:00
+Ramleela Tours And Travels ,A/C Sleeper (2+1),900,23:15
+Humsafar   Travels ,A/C Sleeper (2+1),1000,23:55
+Sai Prasanna Travels -Shatabdi ,A/C Sleeper (2+1),1050,23:35
+Rahi Tour And Travels ,A/C Sleeper (2+1),900,23:40
+Sai Prasanna Travels -Shatabdi ,A/C Sleeper (2+1),1050,23:50
+Musafir Travels Goodluck ,A/C Sleeper (2+1),730,23:58
+Humsafar   Travels ,A/C Sleeper (2+1),1500,22:15
+Humsafar   Travels ,NON A/C Seater (2+2),800,23:00
+Humsafar   Travels ,A/C Sleeper (2+1),1000,21:00
+Humsafar   Travels ,A/C Sleeper (2+1),1000,23:25
+Konduskar Travels Pvt. Ltd. ,Bharat Benz A/C Sleeper (2+1),1334,22:00
+Shatabdi Travels(Prasanna) ,A/C Sleeper (2+1),1200,23:55
+Pancham Travels - PANCHAM ,A/C Sleeper (2+1),1200,23:30
+Humsafar   Travels ,Bharat Benz A/C Sleeper (2+1),1500,23:15
+Westline Travels ,A/C Sleeper (2+1),1200,23:54
+Humsafar   Travels ,NON A/C Seater (2+1),600,06:00
+Bhavana Tours and Travels ,A/C Sleeper (2+1),850,23:30
+Bhavana Tours and Travels ,NON A/C Sleeper (2+1),700,23:00
+Dolphin Travel House (97) ,NON A/C Seater (2+2),560,23:00
+Paulo travels ,A/C Seater / Sleeper (2+1),800,16:00
+Humsafar   Travels ,A/C Sleeper (2+1),1300,22:30
+Savera Carriers and Contractors Pvt.Ltd. ,A/C Sleeper (2+1),1500,21:45
+Himalaya Travels MB LINK ,A/C Sleeper (2+1),1310,19:45
+Sai Prasanna Travels - Royal Cars Plus ,A/C Sleeper (2+1),1400,22:45
+Mahalaxmi Travels DRC ,A/C Sleeper (2+1),1000,23:59
+Dolphin Travel House (94) ,Bharat Benz A/C Sleeper (2+1),1210,21:30
+Rameshwar Travels Shatabdi ,NON A/C Sleeper (2+1),800,23:30
+Shangrila Tours and Travels ,NON A/C Seater (2+2),600,23:45
+Mahalaxmi Travels Mahalaxmi ,NON A/C Sleeper (2+1),1050,23:55
+Mahalaxmi Travels Pooja ,A/C Sleeper (2+1),1000,23:59
+Bhavana Tours and Travels ,A/C Sleeper (2+1),1000,23:45
+Hare Krishna Travels Vaibhav ,A/C Sleeper (2+1),1100,00:20
+Eagle Travels ,A/C Sleeper (2+1),1010,23:15
+Neeta tours and travels ,Volvo Multi-Axle A/C Sleeper (2+1),2000,21:30
+Konduskar Travels Pvt. Ltd. ,Volvo A/C Sleeper (2+1),1142,21:00
+Vaibhav Travels ,A/C Sleeper (2+1),1100,00:15
+Dolphin Travel House(96) ,A/C Sleeper (2+1),1210,23:15
+Jugnu Travels Agency ,A/C Sleeper (2+1),1200,22:30
+Mahalaxmi Travels Anand ,NON A/C Seater (2+2),650,22:00
+Bhavana Tours and Travels ,A/C Sleeper (2+1),1500,22:45
+New Akash Travels ,NON A/C Seater (2+2),700,22:29
+Shree khurana travels ,A/C Sleeper (2+1),1333,01:30
+Sai shraddha tours and travels ,NON A/C Sleeper (2+1),1500,23:59
+Shreyas Travels Red Star ,A/C Sleeper (2+1),1280,22:00
+Ramleela Tours And Travels ,A/C Sleeper (2+1),1200,22:15
+Konduskar Travels Pvt. Ltd. ,Volvo A/C Sleeper (2+1),1047,20:30
+Yuga travels ,A/C Sleeper (2+1),2200,02:00
+SRS Travels ,Scania Multi-Axle A/C Semi Sleeper (2+2),2200,15:00
+Shree khurana travels ,Bharat Benz A/C Sleeper (2+1),2381,03:05
+Nakoda    Travels ,A/C Sleeper (2+1),1200,20:15
+Nakoda    Travels ,A/C Sleeper (2+1),1100,20:25
+Shree khurana travels ,NON A/C Sleeper (2+1),1300,00:45
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,08:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,23:30
+Dolphin Travel House(93) ,A/C Sleeper (2+1),1210,21:00
+Bharuka Travels ,A/C Sleeper (2+1),1500,01:30
+Sanjay Travel Hundekari ,A/C Sleeper (2+1),1200,20:30
+New Akash Travels Saini Palace ,A/C Sleeper (2+1),1350,22:30
+Vishwa   Travels ,A/C Sleeper (2+1),762,23:35
+New Akash Travels Sairaj ,A/C Sleeper (2+1),1350,23:15
+Khurana Travel Services ,A/C Sleeper (2+1),2331,00:30
+Sanjay Travel Shreyas ,NON A/C Seater (2+2),700,22:30
+Khurana Travel Services ,A/C Sleeper (2+1),2137,01:00
+Shrinath Travel ,A/C Sleeper (2+1),950,23:50
+Musafir Travels City Link ,NON A/C Sleeper (2+1),630,23:59
+Sai  travels chembur ,A/C Sleeper (2+1),1900,00:28
+Sai  travels chembur ,A/C Sleeper (2+1),1200,21:30
+Sai  travels chembur ,A/C Sleeper (2+1),1200,22:40
+Shree Samarth Krupa Travels ,A/C Sleeper (2+1),1500,23:59
+Royal Chintamani ,A/C Sleeper (2+1),2500,06:59
+"Himalaya Travels , Aurangabad ",A/C Sleeper (2+1),1810,22:00
+Himalaya Travels MB LINK ,A/C Sleeper (2+1),1110,20:45
+Sai shraddha tours and travels ,NON A/C Sleeper (2+1),1600,12:59
+Jai  Mata Di Travels ,NON A/C Sleeper (2+1),2000,01:10
+Sai Raj Tours and Travels ,NON A/C Sleeper (2+1),720,10:30
+Bhavana Tours and Travels ,NON A/C Seater (2+2),450,23:50
+Royal Chintamani Royal Chintamani ,A/C Sleeper (2+1),1370,04:00
+Shree khurana travels ,NON A/C Sleeper (2+1),1200,23:40
+Prasanna Purple Mobility Solutions Pvt Ltd ,Bharat Benz A/C Sleeper (2+1),2500,14:45
+Yuga travels ,A/C Sleeper (2+1),2400,03:30
+Yuga travels ,A/C Sleeper (2+1),2200,02:30
+Jogeshwari Enterprises ,A/C Sleeper (2+1),1200,23:55
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,18:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,21:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,16:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,09:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,06:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,22:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,20:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,19:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),476,07:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,05:00
+Shree khurana travels ,Bharat Benz A/C Seater (2+1),667,10:00
+Dolphin  travel  house ,A/C Sleeper (2+1),1200,23:30
+Khurana express services ,Bharat Benz A/C Sleeper (2+1),3164,06:25
+Khurana Travel Services ,A/C Sleeper (2+1),2817,02:00
+Meera Tours and Travels ,A/C Sleeper (2+1),2499,23:59
+Khurana Travel Services ,A/C Sleeper (2+1),2817,02:05
+Khurana Travel Services ,A/C Sleeper (2+1),2137,01:45
+Khurana Travel Services ,A/C Sleeper (2+1),2817,01:15
+Shree Samarth Krupa Travels ,NON A/C Seater (2+2),700,23:59
+Royal Chintamani Verma Travels ,A/C Sleeper (2+1),2785,05:00
+Sai shraddha tours and travels ,A/C Sleeper (2+1),1900,23:59
+"Syndicate Travels, Aurangabad ",NON A/C Seater (2+2),410,23:00
+Jyotiba Tours and  Travels ,NON A/C Sleeper (2+1),1500,23:59
+Jai  Mata Di Travels ,NON A/C Sleeper (2+1),1500,01:04
+Jai  Mata Di Travels ,A/C Sleeper (2+1),2000,01:22
+Jai  Mata Di Travels ,NON A/C Seater (2+2),900,00:49
+Mauli Tours and Travels ,NON A/C Sleeper (2+1),1799,00:09
+Mauli Tours and Travels ,NON A/C Sleeper (1+2),1699,01:10
+Mauli Travels mauli ,NON A/C Sleeper (2+1),1499,01:15
+Muktai Travels Siddhivinayak ,NON A/C Sleeper (2+1),1600,23:55
+S K Tours And Travels ,NON A/C Seater (2+2),810,23:15
+"Syndicate Travels, Aurangabad ",A/C Seater (2+2),1000,22:00

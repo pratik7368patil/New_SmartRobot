@@ -23,7 +23,7 @@ class Window(QMainWindow):
         bar_.setBlurRadius(1000)
         bar.setGraphicsEffect(bar_)
 
-        bar.setStyleSheet("font-size: 30px; color: white; border-bottom: 1px solid black;")
+        bar.setStyleSheet("font-size: 35px; color: white; border-bottom: 1px solid black;")
         file = bar.addMenu("File")
         add_new_platform = bar.addMenu("Add New Platform")
         history = bar.addMenu("History")
@@ -35,7 +35,6 @@ class Window(QMainWindow):
         setting = file.addAction("Settings")
         qut = QAction("Quit", self)
         file.addAction(qut)
-
 
         # for add_new_platform
         f_bus = add_new_platform.addAction("For Bus")
@@ -61,6 +60,11 @@ class Window(QMainWindow):
         button.setGeometry(QRect(1150, 350, 100, 100))
         button.setIcon(QtGui.QIcon("Bubble_icon.png"))
         button.clicked.connect(self.quick_play)
+
+        button = QPushButton("Play me for Bus Booking", self)
+        button.setStyleSheet("QPushButton {color: white; font-size: 30px; border: 4px solid "
+                             "#4169E1; }")
+        button.setGeometry(QRect(150, 350, 500, 100))
 
     def ClickMe(self):
         engine = pyttsx3.init()
