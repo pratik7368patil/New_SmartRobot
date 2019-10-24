@@ -99,8 +99,21 @@ def closest(lst, K):
     return lst[min(range(len(lst)), key=lambda i: abs(lst[i] - K))]
 
 
-# Driver code
+# find actual price from average price
 K = average_price
 actual_price_close_to_avg_price = closest(all_ele, K)
 print(actual_price_close_to_avg_price)
+
+# making data frame from csv file
+data = pd.read_csv("products.csv", delimiter=',')
+
+# replacing blank spaces with '_'
+data.columns = [column.replace(" ", "_") for column in data.columns]
+
+# filtering with query method
+# data.query('Bus_Type == "SHIVSHAHI"', inplace=True)
+
+ele_having_shshahi = data[data.Bus_Type == 'SHIVSHAHI']
+print(ele_having_shshahi)
+print(type(ele_having_shshahi))
 
