@@ -93,3 +93,14 @@ for row in csv_data.index:
 all_ele_len = len(all_ele)
 average_price = sum(all_ele)/all_ele_len
 print(average_price)
+
+
+def closest(lst, K):
+    return lst[min(range(len(lst)), key=lambda i: abs(lst[i] - K))]
+
+
+# Driver code
+K = average_price
+actual_price_close_to_avg_price = closest(all_ele, K)
+print(actual_price_close_to_avg_price)
+
