@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get(url)
 time.sleep(1)
-s_city = driver.find_element_by_id('src').send_keys('Malkapur')
+s_city = driver.find_element_by_id('src').send_keys('Aurangabad')
 time.sleep(5)
 d_city = driver.find_element_by_id('dest').send_keys('Pune')
 time.sleep(5)
@@ -42,11 +42,11 @@ def month_to_number(string):
 
 
 x = date.today()
-u_mm = "November"
+u_mm = "October"
 mm = x.strftime("%B")
 _u_mm = month_to_number(u_mm)
 _mm = month_to_number(mm)
-dd = '23'
+dd = '30'
 flag = _u_mm - _mm
 
 while flag > 0:
@@ -59,6 +59,10 @@ while flag > 0:
 driver.find_element_by_xpath("//div[@id='rb-calendar_onward_cal']/table/tbody/tr/td[text()=" + dd + "]").click()
 driver.find_element_by_xpath("//button[@id='search_btn']").click()
 time.sleep(10)
+p = driver.find_element_by_xpath("//div[text()='View Buses']")
+if p:
+    p.click()
+
 content = driver.page_source
 soup = BeautifulSoup(content, "html.parser")
 info = soup.find_all('div', attrs={'class': 'clearfix row-one'})
@@ -72,9 +76,20 @@ for a in info:
     tpe = a.find('div', attrs={'class': 'bus-type f-12 m-top-16 l-color'})
     tpe_.append(tpe.text)
     price = a.find('div', attrs={'class': 'seat-fare'})
-    price_.append(price.text)
+    price_with_text = price.text
+    price_without_text = res = [int(i) for i in price_with_text.split() if i.isdigit()]
+    price_.append(price_without_text[0])
 
 df = pd.DataFrame({'Travels Name': name_, 'Bus Type': tpe_, 'Price': price_})
 df.to_csv('products.csv', index=False, encoding='utf-8')
 
 driver.close()
+
+csv_data = pd.read_csv('products.csv')
+all_ele = []
+for row in csv_data.index:
+    all_ele.append(csv_data['Price'][row])
+
+all_ele_len = len(all_ele)
+average_price = sum(all_ele)/all_ele_len
+print(average_price)
