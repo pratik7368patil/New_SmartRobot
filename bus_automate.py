@@ -9,7 +9,7 @@ from Identify_query import Recognize_voice
 
 engine = pyttsx3.init()
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome("C:\All Projects\Python Projects\Final Year Project\Chrome Driver\chromedriver.exe")
 driver.maximize_window()
 url = "https://www.redbus.in/"
 driver.get(url)
