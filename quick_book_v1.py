@@ -46,8 +46,8 @@ def exter_book_quick_play():
             print(_data_arr)
 
             if _data_arr.index('book') == 0 and _data_arr.index('bus') == 1:
-                url = "http://127.0.0.1/Uipath_project/bus_book.php"
-                driver = webdriver.Chrome()
+                url = "http://127.0.0.1/SmartRobot_web_UI/bus_book.php"
+                driver = webdriver.Chrome("C:\All Projects\Python Projects\Final Year Project\Chrome Driver\chromedriver.exe")
                 driver.get(url)
 
                 # Destination data
