@@ -66,6 +66,12 @@ class Window(QMainWindow):
                              "#4169E1; }")
         button.setGeometry(QRect(150, 350, 500, 100))
 
+        bus_info = QLabel("", self)
+        bus_info.setText("Default Query for bus booking is: book bus for me from Mumbai to Pune bus type ordinary on "
+                         "23 next month ")
+        bus_info.setGeometry(QRect(500, 200, 1500, 25))
+        bus_info.setStyleSheet("QLabel {color: white; font-size: 28px; width: 500px; qproperty-alignment: AlignCenter;}")
+
     def ClickMe(self):
         engine = pyttsx3.init()
         engine.say("Hello, What can I do for you?")
