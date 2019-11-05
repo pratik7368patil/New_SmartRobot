@@ -69,7 +69,7 @@ class Window(QMainWindow):
         bus_info = QLabel("", self)
         bus_info.setText("Default Query for bus booking is: book bus for me from Mumbai to Pune bus type ordinary on "
                          "23 next month ")
-        bus_info.setGeometry(QRect(500, 200, 1500, 25))
+        bus_info.setGeometry(QRect(500, 200, 1500, 40))
         bus_info.setStyleSheet("QLabel {color: white; font-size: 28px; width: 500px; qproperty-alignment: AlignCenter;}")
 
     def ClickMe(self):
