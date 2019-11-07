@@ -3,6 +3,7 @@ from selenium import webdriver
 import pyttsx3
 from datetime import date
 from Identify_query import Recognize_voice
+from bus_automate import bus_auto
 
 
 def exter_book_quick_play():
@@ -47,7 +48,8 @@ def exter_book_quick_play():
 
             if _data_arr.index('book') == 0 and _data_arr.index('bus') == 1:
                 url = "http://127.0.0.1/SmartRobot_web_UI/bus_book.php"
-                driver = webdriver.Chrome("C:\All Projects\Python Projects\Final Year Project\Chrome Driver\chromedriver.exe")
+                driver = webdriver.Chrome(
+                    "C:\All Projects\Python Projects\Final Year Project\Chrome Driver\chromedriver.exe")
                 driver.get(url)
 
                 # Destination data
@@ -166,3 +168,5 @@ def exter_book_quick_play():
             engine.runAndWait()
 
     Extract_query()
+    # importing bus_auto function from bus_automation file
+    bus_auto()
