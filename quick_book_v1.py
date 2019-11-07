@@ -159,6 +159,7 @@ def exter_book_quick_play():
                 engine.say("Okay let me do some work, I have your data")
                 engine.say("I will send ticket to your mail")
                 engine.runAndWait()
+                bus_auto()
             else:
                 print("I can't book bus for you")
                 engine.say("I can't book bus for you")
@@ -169,4 +170,3 @@ def exter_book_quick_play():
 
     Extract_query()
     # importing bus_auto function from bus_automation file
-    bus_auto()
