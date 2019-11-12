@@ -19,11 +19,39 @@ class Window(QMainWindow):
         self.height = 1200
 
         bar = self.menuBar()
+        bar.setStyleSheet("""
+                QMenuBar {
+                    background-color: rgb(49,49,49);
+                    color: rgb(255,255,255);
+                    border: 1px solid #000;
+                    font-size: 32px;
+                }
+
+                QMenuBar::item {
+                    background-color: rgb(49,49,49);
+                    color: rgb(255,255,255);
+                }
+
+                QMenuBar::item::selected {
+                    background-color: royalblue;
+                }
+
+                QMenu {
+                    background-color: rgb(49,49,49);
+                    color: rgb(255,255,255);
+                    border: 1px solid #000; 
+                    font-size: 32px;          
+                }
+
+                QMenu::item::selected {
+                    background-color: royalblue;
+                }
+            """)
         bar_ = QGraphicsDropShadowEffect(self)
         bar_.setBlurRadius(1000)
         bar.setGraphicsEffect(bar_)
 
-        bar.setStyleSheet("font-size: 35px; color: white; border-bottom: 1px solid black;")
+        # bar.setStyleSheet("font-size: 35px; color: white; border-bottom: 1px solid black; margin-left: 20px;")
         file = bar.addMenu("File")
         add_new_platform = bar.addMenu("Add New Platform")
         history = bar.addMenu("History")
@@ -42,10 +70,16 @@ class Window(QMainWindow):
         t_b_product = add_new_platform.addAction("To Buy Product")
         t_o_food = add_new_platform.addAction("To Order Food")
 
+        # for History
+        bus_history = history.addAction("Bus Book History")
+        flight_history = history.addAction("Flight Book History")
+        product_history = history.addAction("Product History")
+        food_history = history.addAction("Food History")
+
         self.InitWindow()
 
     def InitWindow(self):
-        self.setStyleSheet("background-color: #343434")
+        self.setStyleSheet("background-color: #343434")  # 343434
         self.setWindowIcon(QtGui.QIcon("play_icon.png"))
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
@@ -61,16 +95,17 @@ class Window(QMainWindow):
         button.setIcon(QtGui.QIcon("Bubble_icon.png"))
         button.clicked.connect(self.quick_play)
 
-        button = QPushButton("Play me for Bus Booking", self)
-        button.setStyleSheet("QPushButton {color: white; font-size: 30px; border: 4px solid "
-                             "#4169E1; }")
-        button.setGeometry(QRect(150, 350, 500, 100))
+        button2 = QPushButton("Play me for Bus Booking", self)
+        button2.setStyleSheet("QPushButton { color: white; font-size: 30px; border: 4px solid "
+                              "#4169E1; }")
+        button2.setGeometry(QRect(150, 350, 500, 100))
 
         bus_info = QLabel("", self)
-        bus_info.setText("Default Query for bus booking is: book bus for me from Mumbai to Pune bus type ordinary on "
-                         "23 next month ")
-        bus_info.setGeometry(QRect(500, 200, 1500, 40))
-        bus_info.setStyleSheet("QLabel {color: white; font-size: 28px; width: 500px; qproperty-alignment: AlignCenter;}")
+        bus_info.setText("Default Query for bus booking is: <h4>book bus for me from Mumbai to Pune bus type ordinary "
+                         "on 23 next month</h4> ")
+        bus_info.setGeometry(QRect(100, 200, 2000, 100))
+        bus_info.setStyleSheet(
+            "QLabel {color: white; font-size: 28px; qproperty-alignment: AlignCenter;}")
 
     def ClickMe(self):
         engine = pyttsx3.init()

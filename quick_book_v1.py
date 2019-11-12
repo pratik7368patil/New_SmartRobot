@@ -1,5 +1,5 @@
 import speech_recognition as sr
-from selenium import webdriver
+# from selenium import webdriver
 import pyttsx3
 from datetime import date
 from Identify_query import Recognize_voice
@@ -47,10 +47,10 @@ def exter_book_quick_play():
             print(_data_arr)
 
             if _data_arr.index('book') == 0 and _data_arr.index('bus') == 1:
-                url = "http://127.0.0.1/SmartRobot_web_UI/bus_book.php"
-                driver = webdriver.Chrome(
-                    "C:\All Projects\Python Projects\Final Year Project\Chrome Driver\chromedriver.exe")
-                driver.get(url)
+                # url = "http://127.0.0.1/SmartRobot_web_UI/bus_book.php"
+                # driver = webdriver.Chrome(
+                # "C:\All Projects\Python Projects\Final Year Project\Chrome Driver\chromedriver.exe")
+                # driver.get(url)
 
                 # Destination data
                 frm_idx = _data_arr.index('from')
@@ -59,7 +59,7 @@ def exter_book_quick_play():
                 print(des_city)
                 engine.say("Your destination city is " + des_city)
                 engine.runAndWait()
-                driver.find_element_by_id('frm').send_keys(des_city)
+                # driver.find_element_by_id('frm').send_keys(des_city)
                 # Arrival city data
                 to_idx = _data_arr.index('to')
                 arr_idx = to_idx + 1
@@ -67,7 +67,7 @@ def exter_book_quick_play():
                 print(arr_city)
                 engine.say("your arrival city is " + arr_city)
                 engine.runAndWait()
-                driver.find_element_by_id('t_o').send_keys(arr_city)
+                # driver.find_element_by_id('t_o').send_keys(arr_city)
                 # Bus type
                 bt_idx = _data_arr.index('type')
                 b_type_idx = bt_idx + 1
@@ -75,20 +75,20 @@ def exter_book_quick_play():
                 print(b_type)
                 engine.say("Your bus type is " + b_type)
                 engine.runAndWait()
-                driver.find_element_by_id('b_type').send_keys(b_type)
+                # driver.find_element_by_id('b_type').send_keys(b_type)
                 # get date
                 dte_idx = _data_arr.index('on')
                 dd_idx = dte_idx + 1
                 dd = _data_arr[dd_idx]
                 print(dd)
-                driver.find_element_by_id('dd').send_keys(dd)
+                # driver.find_element_by_id('dd').send_keys(dd)
                 # for month
                 mm_idx = dte_idx + 2
                 mm = _data_arr[mm_idx]
 
                 x = date.today()
                 yyyy = x.strftime("%Y")
-                driver.find_element_by_id('yyyy').send_keys(yyyy)
+                # driver.find_element_by_id('yyyy').send_keys(yyyy)
                 if mm == "next" or mm == "month":
                     try:
                         mm = x.replace(month=x.month + 1).strftime("%B")
@@ -101,7 +101,7 @@ def exter_book_quick_play():
                             raise
                 else:
                     mm
-                driver.find_element_by_id('mm').send_keys(mm)
+                # driver.find_element_by_id('mm').send_keys(mm)
                 engine.say("Your traveling date is ")
                 engine.say(dd)
                 engine.say(mm)
@@ -114,9 +114,10 @@ def exter_book_quick_play():
                 engine.runAndWait()
                 _n_data = Recognize_voice()
                 if _n_data == 'no':
-                    driver.find_element_by_id('noCheck').click()
+                    _n_data = 0
+                    # driver.find_element_by_id('noCheck').click()
                 elif _n_data == 'yes':
-                    driver.find_element_by_id('yesCheck').click()
+                    # driver.find_element_by_id('yesCheck').click()
 
                     # this is for day return date
                     print("Return date?")
@@ -125,7 +126,7 @@ def exter_book_quick_play():
                     engine.say("Tell me day only!")
                     engine.runAndWait()
                     r_dd = Recognize_voice()
-                    driver.find_element_by_id('r_dd').send_keys(r_dd)
+                    # driver.find_element_by_id('r_dd').send_keys(r_dd)
 
                     # this is for return month
                     print("Now tell me month only?")
@@ -145,16 +146,16 @@ def exter_book_quick_play():
                     else:
                         r_mm_ = x.strftime("%B")
 
-                    driver.find_element_by_id('r_mm').send_keys(r_mm_)
+                    # driver.find_element_by_id('r_mm').send_keys(r_mm_)
 
                     # this is for return date year
                     engine.say("i will pick current year.")
                     engine.runAndWait()
                     r_yyyy = x.strftime("%Y")
                     print("Return date is %d/%d/%d" % (r_dd, r_mm, r_yyyy))
-                    driver.find_element_by_id('r_yyyy').send_keys(r_yyyy)
+                    # driver.find_element_by_id('r_yyyy').send_keys(r_yyyy)
 
-                driver.find_element_by_id('sub').click()
+                # driver.find_element_by_id('sub').click()
 
                 engine.say("Okay let me do some work, I have your data")
                 engine.say("I will send ticket to your mail")

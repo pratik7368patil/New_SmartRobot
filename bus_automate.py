@@ -16,7 +16,6 @@ def bus_auto():
     driver.get(url)
     time.sleep(1)
     # retrieve data from user data file
-    user_data = open("C:\xampp\htdocs\SmartRobot_web_UI\data\bus_book_data.csv", 'r')
     s_city = driver.find_element_by_id('src').send_keys('Mumbai')
     time.sleep(3)
     d_city = driver.find_element_by_id('dest').send_keys('Pune')
