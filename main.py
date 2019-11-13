@@ -146,6 +146,7 @@ class bus_book_history(QMainWindow):
         self.setStyleSheet("background: #343434")
         self.setWindowTitle("SmartRobot: Bus booking History")
         self.setGeometry(500, 300, 1200, 800)
+        self.setWindowIcon(QtGui.QIcon("play_icon.png"))
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ import pyttsx3
 from Identify_query import Recognize_voice
 
 
-def bus_auto():
+def bus_auto(x_var):
     engine = pyttsx3.init()
     import time
     driver = webdriver.Chrome("C:\All Projects\Python Projects\Final Year Project\Chrome Driver\chromedriver.exe")
@@ -16,11 +16,11 @@ def bus_auto():
     driver.get(url)
     time.sleep(1)
     # retrieve data from user data file
-    s_city = driver.find_element_by_id('src').send_keys('Mumbai')
+    driver.find_element_by_id('src').send_keys(x_var[0])
     time.sleep(3)
-    d_city = driver.find_element_by_id('dest').send_keys('Pune')
+    driver.find_element_by_id('dest').send_keys(x_var[1])
     time.sleep(3)
-    dr = driver.find_element_by_id('onward_cal').send_keys('0')
+    driver.find_element_by_id('onward_cal').send_keys('0')
 
     def month_to_number(string):
         m = {
@@ -46,12 +46,15 @@ def bus_auto():
             raise ValueError('Not a month')
 
     x = date.today()
-    u_mm = "October"
+    u_mm = x_var[4]
     mm = x.strftime("%B")
     _u_mm = month_to_number(u_mm)
     _mm = month_to_number(mm)
-    dd = '30'
+    dd = x_var[3]
     flag = _u_mm - _mm
+    r_dd = x_var[7]
+    r_mm = x_var[8]
+    r_yyyy = x_var[9]
 
     while flag > 0:
         try:
@@ -67,6 +70,8 @@ def bus_auto():
     p = driver.find_element_by_xpath("//div[text()='View Buses']")
     if p:
         p.click()
+    else:
+        p = 0
 
     content = driver.page_source
     soup = BeautifulSoup(content, "html.parser")
@@ -107,6 +112,12 @@ def bus_auto():
                "Private buses, or you can book sleeper bus ")
     engine.runAndWait()
     b_type = Recognize_voice()
+    engine.say("at what time you like to book")
+    engine.runAndWait()
+    booking_time = Recognize_voice()
+    bad_stm = ['at', 'on', 'in']
+    for i in bad_stm:
+        booking_time = booking_time.replace(i, '')
 
     # making data frame from csv file
     data = pd.read_csv("products.csv", delimiter=',')
@@ -116,6 +127,8 @@ def bus_auto():
 
     def closest(lst, K):
         return lst[min(range(len(lst)), key=lambda i: abs(lst[i] - K))]
+
+    # time filter
 
     # find actual price from average price
     K = average_price
@@ -135,3 +148,5 @@ def bus_auto():
         engine.say("I found one bus for you at lowest price, at " + str(minValue))
         engine.say("and Bus time is " + str(time_of_that_bus))
         engine.runAndWait()
+        bus_name_at_user_time = ele_having_shivshahi.loc[ele_having_shivshahi['Time'] == booking_time, 'Travels_Name'].iloc[0]
+        print(bus_name_at_user_time)

@@ -161,10 +161,10 @@ def exter_book_quick_play():
                 # driver.find_element_by_id('sub').click()
 
                 engine.say("Okay let me do some work, I have your data")
-                engine.say("I will send ticket to your mail")
+                engine.say("I will send ticket, to your mail")
                 engine.runAndWait()
                 var_list = [des_city, arr_city, b_type, dd, mm, yyyy, _n_data, r_dd, r_mm, r_yyyy]
-                bus_auto()
+                bus_auto(var_list)
             else:
                 print("I can't book bus for you")
                 engine.say("I can't book bus for you")
