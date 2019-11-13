@@ -115,6 +115,9 @@ def exter_book_quick_play():
                 _n_data = Recognize_voice()
                 if _n_data == 'no':
                     _n_data = 0
+                    r_dd = 0
+                    r_mm = 0
+                    r_yyyy = 0
                     # driver.find_element_by_id('noCheck').click()
                 elif _n_data == 'yes':
                     # driver.find_element_by_id('yesCheck').click()
@@ -160,6 +163,7 @@ def exter_book_quick_play():
                 engine.say("Okay let me do some work, I have your data")
                 engine.say("I will send ticket to your mail")
                 engine.runAndWait()
+                var_list = [des_city, arr_city, b_type, dd, mm, yyyy, _n_data, r_dd, r_mm, r_yyyy]
                 bus_auto()
             else:
                 print("I can't book bus for you")
