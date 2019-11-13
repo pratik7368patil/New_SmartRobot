@@ -57,7 +57,7 @@ def exter_book_quick_play():
                 des_idx = frm_idx + 1
                 des_city = _data_arr[des_idx]
                 print(des_city)
-                engine.say("Your destination city is " + des_city)
+                engine.say("Your Source city is " + des_city)
                 engine.runAndWait()
                 # driver.find_element_by_id('frm').send_keys(des_city)
                 # Arrival city data
@@ -65,7 +65,7 @@ def exter_book_quick_play():
                 arr_idx = to_idx + 1
                 arr_city = _data_arr[arr_idx]
                 print(arr_city)
-                engine.say("your arrival city is " + arr_city)
+                engine.say("your Destination city is " + arr_city)
                 engine.runAndWait()
                 # driver.find_element_by_id('t_o').send_keys(arr_city)
                 # Bus type

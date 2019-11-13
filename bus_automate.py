@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import pyttsx3
 from Identify_query import Recognize_voice
+from quick_book_v1 import exter_book_quick_play
 
 
 def bus_auto():
