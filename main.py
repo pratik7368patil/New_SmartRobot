@@ -143,71 +143,9 @@ class Window(QMainWindow):
 class bus_book_history(QMainWindow):
     def __init__(self):
         super(bus_book_history, self).__init__()
-
-        self.title = "SmartRobot: Bus booking history"
-        self.top = 100
-        self.left = 100
-        self.width = 2300
-        self.height = 1200
-
-        bar = self.menuBar()
-        bar.setStyleSheet("""
-                        QMenuBar {
-                            background-color: rgb(49,49,49);
-                            color: rgb(255,255,255);
-                            border: 1px solid #000;
-                            font-size: 32px;
-                        }
-
-                        QMenuBar::item {
-                            background-color: rgb(49,49,49);
-                            color: rgb(255,255,255);
-                        }
-
-                        QMenuBar::item::selected {
-                            background-color: royalblue;
-                        }
-
-                        QMenu {
-                            background-color: rgb(49,49,49);
-                            color: rgb(255,255,255);
-                            border: 1px solid #000; 
-                            font-size: 32px;          
-                        }
-
-                        QMenu::item::selected {
-                            background-color: royalblue;
-                        }
-                    """)
-        bar_ = QGraphicsDropShadowEffect(self)
-        bar_.setBlurRadius(1000)
-        bar.setGraphicsEffect(bar_)
-
-        # bar.setStyleSheet("font-size: 35px; color: white; border-bottom: 1px solid black; margin-left: 20px;")
-        file = bar.addMenu("File")
-        add_new_platform = bar.addMenu("Add New Platform")
-        history = bar.addMenu("History")
-        hw_to_use = bar.addMenu("How to use?")
-        hlp = bar.addMenu("Help")
-
-        # for file
-        add_data = file.addAction("Add Data")
-        setting = file.addAction("Settings")
-        qut = QAction("Quit", self)
-        file.addAction(qut)
-
-        # for add_new_platform
-        f_bus = add_new_platform.addAction("For Bus")
-        f_flight = add_new_platform.addAction("For Flight")
-        t_b_product = add_new_platform.addAction("To Buy Product")
-        t_o_food = add_new_platform.addAction("To Order Food")
-
-        # for History
-        bus_history = history.addAction("Bus Book History")
-        bus_history.triggered.connect(self.bus_history)
-        flight_history = history.addAction("Flight Book History")
-        product_history = history.addAction("Product History")
-        food_history = history.addAction("Food History")
+        self.setStyleSheet("background: #343434")
+        self.setWindowTitle("SmartRobot: Bus booking History")
+        self.setGeometry(500, 300, 1200, 800)
 
 
 if __name__ == "__main__":
