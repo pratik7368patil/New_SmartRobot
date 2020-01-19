@@ -15,8 +15,8 @@ class Window(QMainWindow):
         self.title = "SmartRobot"
         self.top = 100
         self.left = 100
-        self.width = 2300
-        self.height = 1200
+        self.width = 1300
+        self.height = 700
 
         bar = self.menuBar()
         bar.setStyleSheet("""
