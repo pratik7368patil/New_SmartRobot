@@ -113,7 +113,7 @@ def exter_book_quick_play():
                 engine.say('You want return ticket?')
                 engine.runAndWait()
                 _n_data = Recognize_voice()
-                if _n_data == 'no':
+                if _n_data == 'no' or _n_data == 'no no':
                     _n_data = 0
                     r_dd = 0
                     r_mm = 0
